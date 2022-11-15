@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="whole">
+    <h2>あなたが探したい作品は？</h2>
+    <form action = "/result" method="POST" enctype="multipart/form-data">
+        <p>
+            <label><span>あかるさ</span>
+                🌙 <input type="range" name="atmo" min="1" max="100"> 🌞
+            </label>
+        </p>
+        <p>
+            <label class="input_length"><span>ながさ</span>
+                <input type="radio" name="input_length" id="select_radio1" value="みじかめ"><label for="select_radio1">みじかめ</label>
+                <input type="radio" name="input_length" id="select_radio2" value="ふつう"><label for="select_radio2">ふつう</label>
+                <input type="radio" name="input_length" id="select_radio3" value="ながめ"><label for="select_radio3">ながめ</label>
+            </label>
+        </p>
+        <p>
+            <label><span>ことば</span>
+                <input class=textbox type="text" name="a" placeholder='例：京都'>
+            </label>
+        </p>
+        <p><input type="submit" value="さがす" class = "btn"></p>
+        <div class="loading">
+            <img src="../static/images/loading.gif">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

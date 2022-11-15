@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html,body {
+    /* margin: 10px; */
+    margin: 0;
+    font-family: "Kokoro","Sawarabi Mincho";
+    /* background:rgb(195, 201, 226) url("interlaced.png") ; */
+    background-color:rgb(195, 201, 226);
+    
+    background-image: url("interlaced.png");
+    mix-blend-mode: multiply;
+    /* background-size: cover; */
+    
+  }
+
+  header {
+    height: 40px;
+    width: 100%;
+    /* padding: 0px 10px; */
+    font-size: 10px;
+    background-color: rgb(225, 225, 248);
+    top: 0;
+    z-index: 10;
+    display: flex;
+    
+  }
+
+  .whole {
+    height: 600px;
+    
+    /* height: 100%; */
+    width: 80%;
+    background: linear-gradient(rgba(79, 131, 190,0.5), rgba(209, 164, 164,0.5));
+    background-position: 30% 20%;
+    background-size: 70%;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+    margin:  0 auto; 
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+  }
+
+  h2 {
+    color: rgb(45, 41, 61);
+    font-size: 40px;
+    text-align: center;
+    
+   }
+
+   form {
+    color: rgb(45, 41, 61);
+    font-size: 30px;
+    text-align: center;
+   }
+
+   p label span {
+    font-family: "Kokoro";
+    color: rgb(255, 255, 255)
+   }
+
+   p .input_length{
+    color: rgb(48, 44, 65);
+   }
+
+   p .input_length label{
+    color: rgb(30, 28, 37);
+    transition:.3s;
+   }
+   
+   p .input_length label:hover{
+    color: rgb(239, 234, 247);
+    background-position: -100% 0;
+   }
+
+   .btn{
+    font-family: "Kokoro","Sawarabi Mincho";
+    color: rgb(250, 248, 255);
+    display: inline-block;
+    width: 150px;
+    padding: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    outline: 1px solid;
+    outline-color: #333;
+    outline-offset: 0px;
+    transition:.3s;
+    background-color:rgb(35, 33, 58)
+   }
+
+   .btn:hover {
+    color: rgb(40, 34, 65);
+    animation: light .8s infinite;
+    letter-spacing: .3rem;
+    background-color:rgb(255, 249, 249)
+    
+  }
+
+  @keyframes light {
+    100% { 
+      outline-color: transparent;
+      outline-offset: 12px;
+    }
+  }
+
+
+  .loading {
+    mix-blend-mode: multiply;
+    display: none;
+  }
+
+  footer{
+    background-color: rgb(225, 225, 248);
+    margin-bottom: 0;
+  }
+
+
+
+   /* resultの方のCSS */
+
+   center {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 90%;
+    margin: 0 auto; 
+    text-align: center;
+   }
+
+   center h1{
+    color: rgb(47, 41, 56);
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+   }
+
+   table {
+    animation-name:fadeUpAnime;
+    animation-duration:1s;
+    animation-delay: 0.7s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    color: rgb(14, 6, 49);
+    font-size: 20px;
+    margin:auto
+   }
+
+   @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
+   table th{
+    text-align: center;
+   }
+
+   a {
+    color: rgb(101, 132, 194);
+   }
+

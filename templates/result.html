@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<center>
+    <h1>
+        あなたへのおすすめの作品は<a href="https://www.google.co.jp/search?q=+{{author}}" target="_blank" rel="noopener noreferrer">{{author}}</a>の「<a href="https://www.google.co.jp/search?q=+{{author}}+{{title}}" target="_blank" rel="noopener noreferrer">{{title}}</a>」です。
+    </h1>
+    <h1>
+        こちらの作品もいかがですか？
+    </h1>
+    <table>
+        {{table|safe}}
+    </table>
+    <div class = again><a href="/">他の作品もさがしてみる</a></div>
+</center>
+{% endblock %}
