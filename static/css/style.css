@@ -232,7 +232,8 @@ center h2{
     
     .whole h2 {
       white-space: nowrap;
-      font-size: 20px; 
+      text-align: center;
+      font-size: 17px; 
      }
 
      
@@ -241,22 +242,32 @@ center h2{
      }
 
      .atmo{
-      padding: 5%;
+      /* padding: 5%; */
       margin: auto;
      }
 
      .atmorange{
-      font-size: 25px; 
+      white-space: nowrap;
+      text-align: center;
+      font-size: 15px; 
      }
 
      .length{
-      padding: 5%;
+      width:100%;
+      /* padding: 5%; */
       margin: auto;
      }
 
      .lengthbtn{
       white-space: nowrap;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      margin: auto;
       font-size: 18px; 
+
      }
 
      .word{
