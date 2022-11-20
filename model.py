@@ -4,7 +4,6 @@ from gensim.models import KeyedVectors
 import numpy as np
 import tqdm
 import gzip
-from pymagnitudelight import Magnitude
 
 # モデルの読み込み
 model_name = 'model.kv'
