@@ -7,10 +7,8 @@ import gzip
 
 # モデルの読み込み
 model_name = 'model.kv'
-# model_name = 'cc.ja.300.magnitude'
 model = KeyedVectors.load(model_name, mmap='r')
-# model = gensim.models.KeyedVectors.load_word2vec_format(model_name,binary=True)
-# model = Magnitude(model_name)
+
 
 def sorayomi(atmo,input_length,a): #明るさ,長さ,単語
     def analyze(df):
